@@ -1,0 +1,15 @@
+1. (Given a Dataset) Analyze this dataset and give me a model that can predicit this response variable.
+
+Answer: First, we should do the data cleansing and data transformation, to summary dataset and observe outlier and meanwhile we need to think about it what kind of problem they are? 
+Supervies learning or unsupervise learning? Classification or regression or clustering? For the next step, we should do feature engineering and try some models.
+Laterly, we should to split the dataset into train, validation, test dataset and use cross validation to check their performance. According to the evaluation we could imporve our modeling work.
+Start by fitting a simple model (multivariate regression, logistic regression), do some feature engineering accordingly, and then try some complicated models. Always split the dataset into train, validation, test dataset and use cross validation to check their performance.
+Plot and visualize the data.
+
+2. What could be some issues if the distribution of the test data is significantly different thatn the distribution of the training data?
+
+Answer:
+1. Covariate shift: training and test input follow different distribution but the functional relation remians unchanged.
+2. Sample selection bias: the training examples have been obtained through a biased methond, such as non-uniform selection.
+3. Non-stationary environments: Training environment is different form the test one, whether is's due to a temprotal or spatial change.
+One typical scenario is adversarial classification problems, such as spam filtering and network intrusion detection.
